@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joseph Chafutwa | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Joseph Chafutwa</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Passionate Developer & Data Analyst</p>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <div class="about-text">
+        <p>
+          Hi, I'm <strong>Joseph Chafutwa</strong>, a passionate developer and problem-solver based in Kenya. With a strong foundation in front-end and fullstack development, I bring web interfaces and applications to life using technologies like HTML, CSS, JavaScript, Python, and Flask.
+        </p>
+        <p>
+          I also have a deep interest in data — transforming it into meaningful insights using tools like Pandas, NumPy, and Scikit-learn. Whether it's crafting beautiful interfaces, building end-to-end apps, or analyzing data for smarter decisions, I'm always eager to learn and create impactful solutions.
+        </p>
+        <p>
+          When I’m not coding, I enjoy helping others, learning new skills, and exploring new tech trends that can elevate digital experiences.
+        </p>
+      </div>
+      <div class="about-img">
+        <img src="images/ChatGPT Image Apr 15, 2025, 03_26_10 PM.png" alt="Joseph Chafutwa" />
+      </div>
+    </div>
+  </section>
+  
+  <section id="services" class="services">
+    <h2>Services</h2>
+    <div class="services-grid">
+      <div class="service-card">Web Development</div>
+      <div class="service-card">Fullstack Applications</div>
+      <div class="service-card">Data Analysis & Dashboards</div>
+      <div class="service-card">UI/UX Design</div>
+    </div>
+  </section>
+  
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="dropdown">
+      <button onclick="showProjects('frontend')">Frontend</button>
+      <button onclick="showProjects('fullstack')">Fullstack</button>
+      <button onclick="showProjects('data')">Data Analysis</button>
+    </div>
+
+    <div id="project-grid" class="project-grid">
+      <!-- Project cards will be injected here -->
+    </div>
+
+    <div class="more-projects">
+      <a href="https://github.com/Chafutwa" target="_blank" class="github-btn">More Projects on GitHub</a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/josephchafutwa@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-section">
+      <h3>My Portfolio</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Services</h3>
+      <ul>
+        <li>Web Dev</li>
+        <li>Data Analysis</li>
+        <li>UI/UX Design</li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Help & Contact</h3>
+      <p>Email: josephchafutwa@gmail.com</p>
+      <p>Phone: +254 711 622 928</p>
+    </div>
+    <div class="footer-section">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
