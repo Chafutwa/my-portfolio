@@ -5,11 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Joseph Chafutwa | Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      scroll-padding-top: 100px;
+    }
+  </style>
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <div class="logo">Joseph Chafutwa</div>
+      <div class="logo-container">
+        <img src="images/logo.png" alt="Jolink Tech Logo" class="logo" />
+      </div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -23,28 +30,39 @@
   <section id="home" class="hero">
     <h1>Welcome to My Portfolio</h1>
     <p>Passionate Developer & Data Analyst</p>
+    <div class="hero-buttons">
+      <a href="images/Joseph_Chafutwa_CV.pdf" class="btn download-btn" download>
+        📄 Download CV
+      </a>
+    </div>    
   </section>
 
   <section id="about" class="about">
     <h2>About Me</h2>
     <div class="about-container">
       <div class="about-text">
-        <p>
-          Hi, I'm <strong>Joseph Chafutwa</strong>, a passionate developer and problem-solver based in Kenya. With a strong foundation in front-end and fullstack development, I bring web interfaces and applications to life using technologies like HTML, CSS, JavaScript, Python, and Flask.
-        </p>
-        <p>
-          I also have a deep interest in data — transforming it into meaningful insights using tools like Pandas, NumPy, and Scikit-learn. Whether it's crafting beautiful interfaces, building end-to-end apps, or analyzing data for smarter decisions, I'm always eager to learn and create impactful solutions.
-        </p>
-        <p>
-          When I’m not coding, I enjoy helping others, learning new skills, and exploring new tech trends that can elevate digital experiences.
-        </p>
+        <p><strong>👋 About Me</strong></p>
+        <p>Hi there! I’m Joseph, a <strong>problem-solving enthusiast</strong> with a knack for building web applications and extracting stories from data. Based in Kenya, I bridge creativity and logic to deliver solutions that are both functional and elegant.</p>
+
+        <p><strong>What I Do</strong></p>  
+        <p>💻 <strong>Full-Stack Development:</strong> Crafting responsive web apps with HTML/CSS, JavaScript, and Python/Flask.</p>
+        <p>📊 <strong>Data Analysis:</strong> Transforming raw data into actionable insights using Pandas, NumPy, and Scikit-learn.</p>
+        <p>🚀 <strong>Continuous Learning:</strong> Always exploring new tech (currently diving into <strong>React</strong> and <strong>Machine Learning</strong>).</p> 
+
+        <p><strong>Beyond Code</strong></p>
+        <p>✨ When I’m not debugging or analyzing datasets, you’ll find me:</p>
+        <p>🌍 Contributing to open-source projects. </p>
+        <p>🎷 Listening to tech podcasts </p>
+        <p>🧠 Mentoring aspiring developers in my community.</p>  
+
+        <em>Let’s build something amazing together!</em>
       </div>
       <div class="about-img">
-        <img src="images/ChatGPT Image Apr 15, 2025, 03_26_10 PM.png" alt="Joseph Chafutwa" />
+        <img src="images/Joseph.png" alt="Portrait of Joseph Chafutwa" />
       </div>
     </div>
   </section>
-  
+
   <section id="services" class="services">
     <h2>Services</h2>
     <div class="services-grid">
@@ -54,7 +72,6 @@
       <div class="service-card">UI/UX Design</div>
     </div>
   </section>
-  
 
   <section id="projects" class="projects">
     <h2>Projects</h2>
@@ -69,13 +86,15 @@
     </div>
 
     <div class="more-projects">
-      <a href="https://github.com/Chafutwa" target="_blank" class="github-btn">More Projects on GitHub</a>
+      <a href="https://github.com/Chafutwa" target="_blank" rel="noopener noreferrer" class="github-btn">More Projects on GitHub</a>
     </div>
   </section>
 
   <section id="contact" class="contact">
     <h2>Contact Me</h2>
     <form action="https://formsubmit.co/josephchafutwa@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://your-portfolio.com/thankyou.html">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" placeholder="Your Message" required></textarea>
